@@ -3,17 +3,22 @@ button,
 input,
 textarea {
   color: black;
-  font-family: 'Fira Code', sans-serif;
+  font-family: "Fira Code", sans-serif;
   font-size: 16px;
   line-height: 1.8; }
 
 body {
   background-color: #EDEDED;
   margin: 0;
-  font-family: 'Fira Code', sans-serif; }
+  font-family: "Fira Code", sans-serif; }
+
+img {
+  display: block;
+  width: 100%;
+  height: auto; }
 
 header, footer {
-  background-color: green;
+  background-color: black;
   height: 100px; }
 
 .sidebar-right {
@@ -39,7 +44,10 @@ p {
   flex-flow: column; }
 
 .site-info {
-  flex-grow: 1; }
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column;
+  justify-content: center; }
 
 .site-title {
   margin: 0;
@@ -55,5 +63,188 @@ p {
   font-size: 1.2em;
   margin-top: -.8;
   font-style: italic; }
+
+.main-menu {
+  padding: 1em 1em;
+  color: black;
+  background-color: #F6D200; }
+
+@media screen and (min-width: 1120px) {
+  .site-title {
+    font-size: 4em; } }
+.main-content-area {
+  padding: 2em; }
+
+.post {
+  background-color: white;
+  margin-bottom: 1em; }
+
+.post a {
+  color: black;
+  text-decoration: none; }
+
+.post-content {
+  padding: 0 40px 20px; }
+
+.post-content h2 {
+  background-color: #F6D200;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  margin: 0 -40px 30px; }
+
+@media screen and (min-width: 810px) {
+  .posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+
+  .post {
+    flex-basis: 49%; } }
+@media screen and (min-width: 1120px) {
+  .post-one-third {
+    flex-basis: 32%; }
+
+  .post-half {
+    flex-basis: 49%; }
+
+  .post-full {
+    flex-basis: 100%; } }
+.section-header {
+  color: black;
+  font-size: 3em;
+  text-align: center; }
+
+.watch-card {
+  margin-bottom: 1em; }
+
+.watch-content {
+  background-color: black;
+  color: white;
+  padding: 3em; }
+
+.watch-content h2 {
+  font-size: 2em;
+  font-weight: 300;
+  margin: 0;
+  text-transform: capitalize; }
+
+.movie-info {
+  font-weight: none; }
+
+.movie-story {
+  margin: 1em 0; }
+
+.watch-content a {
+  color: white;
+  font-weight: none; }
+
+@media screen and (min-width: 810px) {
+  .watch-card {
+    display: flex; }
+
+  .watch-content {
+    display: flex;
+    flex-flow: column;
+    justify-content: center; }
+
+  .img-right {
+    order: 2; } }
+.download-card {
+  margin-bottom: 1em; }
+
+.download-content {
+  background-color: white; }
+
+.download-content a {
+  background-color: black;
+  color: white;
+  padding: 1em 2em;
+  text-decoration: none;
+  text-transform: capitalize; }
+
+.download-info {
+  padding: 1em 2em; }
+
+.download-info h4 {
+  margin: 0; }
+
+.download-info p {
+  margin: 0;
+  font-size: .9em; }
+
+.download-cast img {
+  height: 80px;
+  width: 80px;
+  border-radius: 0%; }
+
+.download-rating {
+  background-color: #F6D200;
+  padding: 1em 2em;
+  color: black;
+  font-size: .9em; }
+
+.download-rating .rate {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: -.25em; }
+
+.download-content {
+  display: flex;
+  flex-flow: column; }
+
+.download-content a, .download-rating {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  text-align: center; }
+
+.download-genre, .download-cast {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
+
+.download-info h4 {
+  flex-basis: 20%; }
+
+.download-genre {
+  margin-bottom: 10px; }
+
+@media screen and (min-width: 810px) {
+  .download-content {
+    display: flex;
+    flex-flow: row; }
+
+  .download-content a, .download-rating {
+    flex-grow: 1; }
+
+  .dowanload-info {
+    flex-grow: 2; } }
+/* movie gallery */
+.gallery-imgs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -8px; }
+
+.gallery-img {
+  height: 250px;
+  flex-grow: 1;
+  margin: 0 0 8px 8px; }
+
+.gallery-img img {
+  height: 100%;
+  object-fit: cover; }
+
+.gallery-img:nth-child(4n+1) {
+  flex-basis: 250px; }
+
+.gallery-img:nth-child(4n+2) {
+  flex-basis: 350px; }
+
+.gallery-img:nth-child(4n+3) {
+  flex-basis: 180px; }
+
+.gallery-img:nth-child(4n+4) {
+  flex-basis: 340px; }
 
 /*# sourceMappingURL=style.css.map */
