@@ -1,5 +1,8 @@
 $font: 'Fira Code', sans-serif;
 $yellow: #F6D200;
+$background: #EDEDED;
+
+
 body,
 button,
 input,
@@ -11,7 +14,7 @@ textarea {
 }
 
 body {
-    background-color: #EDEDED;
+    background-color: $background;
     margin: 0;
     font-family: $font;
 }
@@ -34,8 +37,10 @@ footer {
 header {
     background-color: black;
 }
+
+
 .sidebar-right {
-    background-color: #EDEDED;
+    background-color: $background;
     color: white;
 }
 
@@ -109,7 +114,8 @@ p {
     font-weight: 450;
 	padding: .6em 1em;
 	display: block;
-	transition: all .5s ease;
+    transition: all .5s ease;
+    text-align: center;
 }
 
 .main-menu li a:hover {
@@ -211,7 +217,7 @@ p {
 .watch-content {
     background-color: black;
     color: white;
-    padding: 3em;
+    padding: 2em;
 }
 
 .watch-content h2 {
@@ -438,5 +444,3 @@ p {
 
     }
 }
-
-
